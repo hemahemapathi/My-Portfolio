@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion';
 
 
 import { ThemeContext } from '../../context/ThemeContext';
-import './contact.css';
+import './Contact.css';
 
 
 const Contact = () => {
