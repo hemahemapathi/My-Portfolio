@@ -31,7 +31,7 @@ const Hero = () => {
   }, []);
 
   const handleResumeClick = () => {
-    window.open('/assets/Resume.pdf', '_blank');
+    window.open('/assets/resume.pdf', '_blank');
   };
 
   return (
