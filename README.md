@@ -20,7 +20,7 @@
           
    - Integrated contact form powered by EmailJS for easy communication
 
-🛠️ Tech Stack  :
+  #  🛠️ Tech Stack  :
 
    ⚛️ React.js
 
