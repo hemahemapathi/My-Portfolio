@@ -17,7 +17,7 @@ const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [text, setText] = useState('');
-  const fullText = '< HP.... />';
+  const fullText = 'HP...... ';
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
