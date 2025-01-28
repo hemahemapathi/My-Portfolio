@@ -73,8 +73,8 @@ const Contact = () => {
           className="contact-content"
         >
           <div className="contact-header mb-3">
-            <h2 className="section-title h4">Get In Touch</h2>
-            <p className="section-subtitle small"></p>
+            <h2 className="section-title h4" style={{ fontFamily: 'Arial', fontWeight: 'bold' }}><b>Let's Collaborate</b></h2>
+            <p className="section-subtitle small" style={{ fontFamily: 'Arial', fontWeight: 'bold' }}></p>
           </div>
           <Row className="contact-row justify-content-center">
             <Col lg={4} md={6}>
@@ -97,6 +97,7 @@ const Contact = () => {
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       onFocus={() => handleFocus('name')}
                       required
+                      style={{ fontFamily: 'Arial', fontWeight: 'bold' }}
                     />
                   </div>
                   <div className="form-group text-center input-wrapper mb-2" style={{ borderRadius: '4px', padding: '8px' }}>
@@ -109,6 +110,7 @@ const Contact = () => {
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                       onFocus={() => handleFocus('email')}
                       required
+                      style={{ fontFamily: 'Arial', fontWeight: 'bold' }}
                     />
                   </div>
                   <div className="form-group text-center input-wrapper mb-2" style={{ borderRadius: '4px', padding: '8px' }}>
@@ -121,6 +123,7 @@ const Contact = () => {
                       onChange={(e) => setFormData({...formData, subject: e.target.value})}
                       onFocus={() => handleFocus('subject')}
                       required
+                      style={{ fontFamily: 'Arial', fontWeight: 'bold' }}
                     />
                   </div>
                   <div className="form-group text-center input-wrapper mb-2" style={{ borderRadius: '4px', padding: '8px' }}>
@@ -133,6 +136,7 @@ const Contact = () => {
                       onFocus={() => handleFocus('message')}
                       rows="3"
                       required
+                      style={{ fontFamily: 'Arial', fontWeight: 'bold' }}
                     ></textarea>
                   </div>
                   <div className="button-wrapper" style={{ borderRadius: '4px', padding: '8px' }}>
@@ -142,6 +146,7 @@ const Contact = () => {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       disabled={status.type === 'loading'}
+                      style={{ fontFamily: 'Arial', fontWeight: 'bold' }}
                     >
                       {status.message || 'Send Message'}
                     </motion.button>

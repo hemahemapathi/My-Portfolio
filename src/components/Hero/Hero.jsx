@@ -16,13 +16,14 @@ const Hero = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        'Full Stack Developer',
-        'MERN Stack Developer',
-        'Junior Web Developer',
+        '<strong>Full Stack Developer</strong>',
+        '<strong>MERN Stack Developer</strong>',
+        '<strong>Junior Web Developer</strong>',
       ],
       typeSpeed: 40,
       backSpeed: 50,
-      loop: true
+      loop: true,
+      contentType: 'html'
     });
 
     return () => {
@@ -49,7 +50,7 @@ const Hero = () => {
               <h2>
                 <span ref={el}></span>
               </h2>
-             <p>Full-stack web engineer specializing in scalable, dynamic solutions.</p>
+             <p><b>Full-stack engineer specializing in scalable systems</b></p>
               
               <div className="hero-buttons d-flex justify-content-center justify-content-lg-start">
                 <div className="resume-container">

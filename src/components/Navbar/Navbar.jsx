@@ -16,6 +16,24 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [text, setText] = useState('');
+  const fullText = '< HP.... />';
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      const timeout = setTimeout(() => {
+        setText(prev => prev + fullText[index]);
+        setIndex(index + 1);
+      }, 200);
+      return () => clearTimeout(timeout);
+    } else {
+      setTimeout(() => {
+        setText('');
+        setIndex(0);
+      }, 2000);
+    }
+  }, [index]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +58,6 @@ const Navbar = () => {
   const handleNavClick = (e, href) => {
     e.preventDefault();
     const element = document.querySelector(href);
-    // Special handling for home-to-about transition
     const offset = href === '#about' ? 0 : 40;
     const elementPosition = element.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset - offset;
@@ -52,12 +69,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'open' : ''} ${visible ? 'navbar-visible' : 'navbar-hidden'}`}>
+    <nav className={`navbar navbar-expand-lg ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'open' : ''} ${visible ? 'navbar-visible' : 'navbar-hidden'} ${isDark ? 'dark-mode' : 'light-mode'}`}>
       <div className="container">
-        <a className="navbar-brand" href="#home">
-          <span className="logo-text animate__animated animate__fadeIn">HP</span>
-        </a>
-
+        <div className="navbar-brand typing-logo fw-bold">
+          <span className={`typing-text ${isDark ? 'text-light' : 'text-dark'}`}>{text}</span>
+          <span className="cursor">|</span>
+        </div>
+        
         <button 
           className="navbar-toggler"
           type="button"
@@ -72,10 +90,10 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
             {navItems.map((item, index) => (
-              <li key={index} className="nav-item">
+              <li key={index} className="nav-item mx-3">
                 <a 
                   href={item.href}
-                  className="nav-link"
+                  className={`nav-link fw-bold ${isDark ? 'text-light' : 'text-dark'}`}
                   onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.icon}

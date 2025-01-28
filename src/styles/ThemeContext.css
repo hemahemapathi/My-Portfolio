@@ -7,9 +7,9 @@
     --accent-light: #007bff;
     
     /* Dark Mode Colors */
-    --bg-dark: #1a1a1a;
-    --text-dark: #ffffff;
-    --primary-dark: #64b5f6;
+    --bg-dark: #0c0c0c;
+    --text-dark: #555555;
+    --primary-dark: #fa8805e5;
     --secondary-dark: #90a4ae;
     --accent-dark: #2196f3;
   }

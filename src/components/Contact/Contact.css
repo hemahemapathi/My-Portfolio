@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Bold Font';
+  src: url('../fonts/bold-font.woff2') format('woff2');
+  font-weight: bold;
+}
+
 .contact-section {
   padding: 80px 0;
   background-color: var(--bg);
@@ -11,6 +17,7 @@
   color: var(--text);
   position: relative;
   animation: fadeInDown 0.8s ease-out;
+  font-family: 'Bold Font', sans-serif;
 }
 
 .section-title::after {
@@ -69,6 +76,7 @@
   font-size: 1rem;
   margin-bottom: 0.2rem;
   color: var(--text);
+  font-family: 'Bold Font', sans-serif;
 }
 
 .info-content a {
@@ -92,7 +100,6 @@
 
 .input-wrapper {
   background: #faf6f6;
-  
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -113,6 +120,7 @@
   transition: all 0.3s ease;
   display: block;
   margin: 0 auto;
+  font-family: 'Bold Font', sans-serif;
 }
 
 .submit-btn:hover:not(:disabled) {

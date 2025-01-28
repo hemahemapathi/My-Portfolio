@@ -4,6 +4,8 @@
   background-color: var(--bg);
   min-height: 90vh;
   animation: fadeIn 1s ease-in;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .section-title {
@@ -13,6 +15,8 @@
   color: var(--text);
   position: relative;
   animation: slideDown 0.8s ease-out;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .section-title::after {
@@ -49,11 +53,12 @@
   color: var(--text);
   cursor: pointer;
   transition: all 0.3s ease;
-  
   animation: scaleIn 0.4s ease-out, float 3s ease-in-out infinite;
   position: relative;
   overflow: hidden;
   font-size: clamp(0.875rem, 2vw, 1rem);
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .filter-btn:hover {
@@ -96,6 +101,8 @@
   width: 100%;
   max-width: 350px;
   margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .project-card:hover {
@@ -149,6 +156,8 @@
   background: var(--primary);
   transition: all 0.3s ease;
   animation: rotateIn 0.6s ease-out;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .project-overlay a:hover {
@@ -159,6 +168,8 @@
   padding: 1.5rem;
   background: #e0dede;
   animation: fadeIn 0.8s ease-out;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .project-info h3 {
@@ -166,6 +177,22 @@
   margin-bottom: clamp(0.6rem, 2vw, 0.8rem);
   color: var(--text);
   transition: color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .project-info h3 {
+    color: black;
+  }
+  
+  .project-info p {
+    color: black;
+  }
+  
+  .tech-tag {
+    color: black;
+  }
 }
   
 .project-info p {
@@ -173,6 +200,8 @@
   font-size: clamp(0.8rem, 2vw, 0.85rem);
   margin-bottom: clamp(0.6rem, 2vw, 0.8rem);
   transition: color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .project-tech {
@@ -191,6 +220,8 @@
   font-size: 0.85rem;
   transition: all 0.3s ease;
   animation: scaleIn 0.4s ease-out;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
 }
   
 .tech-tag:hover {
@@ -215,9 +246,10 @@
   color: white;
   border-radius: 20px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: bold;
   transition: all 0.3s ease;
   font-size: clamp(0.875rem, 2vw, 1rem);
+  font-family: 'Arial', sans-serif;
 }
 
 .view-all-btn:hover {

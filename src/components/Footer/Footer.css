@@ -2,19 +2,21 @@
 .footer {
   background-color: var(--bg);
   padding: 60px 0 20px;
- 
   width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
   
 .footer-logo h3 {
   font-size: clamp(1.2rem, 2vw, 1.8rem);
   color: var(--text);
   margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
   
 .footer-logo p {
   color: var(--primary);
   font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-family: 'Poppins', sans-serif;
 }
   
 .social-icons {
@@ -29,6 +31,7 @@
   color: var(--text);
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
   
 .social-icons a:hover {
@@ -44,6 +47,7 @@
   color: var(--text);
   margin-bottom: 0.5rem;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-family: 'Poppins', sans-serif;
 }
   
 .footer-contact a {
@@ -51,6 +55,7 @@
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-family: 'Poppins', sans-serif;
 }
   
 .footer-contact a:hover {
@@ -71,6 +76,7 @@
   color: var(--text);
   margin: 0;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-family: 'Poppins', sans-serif;
 }
   
 .footer-nav {
@@ -84,6 +90,7 @@
   text-decoration: none;
   font-size: clamp(0.8rem, 1.2vw, 0.9rem);
   transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
   
 .footer-nav a:hover {

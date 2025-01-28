@@ -19,6 +19,8 @@
 .section-title {
   text-align: center;
   font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   color: var(--text);
   margin-bottom: 2.5rem;
   position: relative;
@@ -44,6 +46,8 @@
 
 .about-content h3 {
   font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   color: var(--text);
   margin-bottom: 1rem;
   animation: slideInLeft 1s cubic-bezier(0.4, 0, 0.2, 1), colorShift 5s infinite;
@@ -51,6 +55,8 @@
 
 .about-content p {
   font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.7;
   color: var(--text);
   margin-bottom: 1.8rem;
@@ -92,6 +98,8 @@
 
 .stat-item h4 {
   font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   color: black;
   margin-bottom: 0.6rem;
   transition: color 0.4s ease;
@@ -100,6 +108,8 @@
 
 .stat-item p {
   font-size: 0.95rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   color: var(--text);
   transition: color 0.4s ease;
@@ -152,6 +162,8 @@
   justify-content: center;
   color: var(--bg);
   font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   animation: pulse 2.5s infinite, spin 5s linear infinite, iconPop 3s ease-in-out infinite;
   z-index: 1;
   border: 2px solid var(--bg);
@@ -172,6 +184,8 @@
   animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1), contentPulse 4s ease-in-out infinite;
   transform-origin: center;
   backdrop-filter: blur(5px);
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 .timeline-content:hover {
@@ -460,14 +474,6 @@
   }
 
   .stat-item {
-    padding: 1.2rem;
-  }
-
-  .stat-item h4 {
-    font-size: 1.4rem;
-  }
-
-  .stat-item p {
-    font-size: 0.85rem;
+    padding: 1rem;
   }
 }

@@ -42,7 +42,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title">Professional Identity</h2>
           
           <Row className="align-items-center">
             <Col lg={6} md={6}>

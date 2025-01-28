@@ -184,7 +184,7 @@ const Certificates = () => {
                   }
                 }}
                 style={{
-                  background: "linear-gradient(45deg, #007bff, #00d4ff)",
+                  background: "var(--nav-btn-color, #333)",
                   border: 'none',
                   borderRadius: '50%',
                   width: '60px',

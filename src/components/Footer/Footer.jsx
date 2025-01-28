@@ -16,6 +16,10 @@ const Footer = () => {
     {
       icon: <FaLinkedin style={{ color: '#0077B5' }} />,
       url: "https://www.linkedin.com/in/hemapathi-b-17b505257/"
+    },
+    {
+      icon: <FaEnvelope style={{ color: '#EA4335' }} />,
+      url: "mailto:hemahemapathi2001@gmail.com"
     }  
   ];
 
@@ -62,12 +66,12 @@ const Footer = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <p>© {currentYear} Hemapathi. All rights reserved.</p>
+          <p><b>©  {currentYear} Hemapathi. All rights reserved.</b></p>
           <div className="footer-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <b><a href="#home">Home</a></b>
+            <b><a href="#about">About</a></b>
+            <b><a href="#projects">Projects</a></b>
+            <b><a href="#contact">Contact</a></b>
           </div>
         </motion.div>
       </Container>

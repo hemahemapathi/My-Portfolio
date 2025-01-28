@@ -140,7 +140,7 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <h2 className="section-title mb-5">My Projects</h2>
+          <h2 className="section-title mb-5">Practical Applications</h2>
 
           <div className="filter-buttons mb-4">
             {categories.map(category => (
