@@ -43,7 +43,6 @@ const About = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2 className="section-title">
-            <span className="title-icon"><FaUserTie /></span>
             Professional Identity
           </h2>
           
