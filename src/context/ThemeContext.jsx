@@ -20,7 +20,7 @@ export const ThemeProvider = ({ children }) => {
           document.documentElement.style.setProperty('--icon-color', '#a6a6cc');
           document.documentElement.style.setProperty('--text-primary', '#e6e6f0');
           document.documentElement.style.setProperty('--text-secondary', '#b8b8d9');
-          document.documentElement.style.setProperty('--background-secondary', '#373745');
+          document.documentElement.style.setProperty('--background-secondary', '#0c0c0c');
           document.documentElement.style.setProperty('--accent-color', '#8b8ba7');
         } else {
 

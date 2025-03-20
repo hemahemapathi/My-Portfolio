@@ -29,7 +29,7 @@
 }
 
 .navbar.open {
-  background: rgba(255, 255, 255, 0.98);
+  background: transparent(255, 255, 255, 0.98);
   animation: fadeIn 0.3s ease-in-out;
 }
 

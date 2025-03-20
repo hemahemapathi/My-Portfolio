@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaLaptopCode, FaCertificate } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode, FaCertificate, FaUserTie } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './About.css';
 
@@ -42,7 +42,10 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <h2 className="section-title">Professional Identity</h2>
+          <h2 className="section-title">
+            <span className="title-icon"><FaUserTie /></span>
+            Professional Identity
+          </h2>
           
           <Row className="align-items-center">
             <Col lg={6} md={6}>
@@ -53,23 +56,27 @@ const About = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
-                <h3>Aspiring Full Stack Developer</h3>
+                <h3 className="gradient-text">Aspiring Full Stack Developer</h3>
                 <p className="mb-3">
-                I excel in building scalable MERN stack applications with a strong focus on user-centric design and efficient problem-solving. My adaptability, attention to detail, and passion for learning set me apart in delivering innovative and impactful solutions.
+                  I excel in building scalable MERN stack applications with a strong focus on user-centric design and efficient problem-solving. My adaptability, attention to detail, and passion for learning set me apart in delivering innovative and impactful solutions.
                 </p>
-                <div className="stats-container d-flex justify-content-around mb-4">
-                  <div className="stat-item text-center">
-                    <h4>8</h4>
-                    <p>Projects</p>
-                  </div>
-                  <div className="stat-item text-center">
-                    <h4>10+</h4>
-                    <p>Technologies</p>
-                  </div>
-                  <div className="stat-item text-center">
-                    <h4>9+</h4>
-                    <p>Certifications</p>
-                  </div>
+                <div className="stats-container">
+                  {[
+                    { value: "8", label: "Projects" },
+                    { value: "10+", label: "Technologies" },
+                    { value: "9+", label: "Certifications" }
+                  ].map((stat, index) => (
+                    <motion.div 
+                      key={index}
+                      className="stat-item"
+                      style={{ "--item-index": index }}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      <h4>{stat.value}</h4>
+                      <p>{stat.label}</p>
+                    </motion.div>
+                  ))}
                 </div>
               </motion.div>
             </Col>
@@ -79,20 +86,22 @@ const About = () => {
                 {timeline.map((item) => (
                   <motion.div
                     key={item.id}
-                    className="timeline-item d-flex align-items-start mb-3"
-                    initial={{ opacity: 0, x: -50 }}
+                    className="timeline-item"
+                    style={{ "--item-index": item.id - 1 }}
+                    initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: item.id * 0.2 }}
                     viewport={{ once: false, amount: 0.3 }}
+                    whileHover={{ scale: 1.02 }}
                   >
-                    <div className="timeline-icon me-3">
+                    <div className="timeline-icon">
                       {item.icon}
                     </div>
                     <div className="timeline-content">
-                      <span className="date small">{item.date}</span>
-                      <h5 className="mb-1">{item.title}</h5>
-                      <p className="location small mb-1">{item.location}</p>
-                      <p className="description small mb-0">{item.description}</p>
+                      <span className="date">{item.date}</span>
+                      <h5>{item.title}</h5>
+                      <p className="location">{item.location}</p>
+                      <p className="description">{item.description}</p>
                     </div>
                   </motion.div>
                 ))}
