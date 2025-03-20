@@ -32,7 +32,7 @@ const Hero = () => {
   }, []);
 
   const handleResumeClick = () => {
-    window.open('/assets/resume.pdf', '_blank');
+    window.open('/assets/my resume.pdf', '_blank');
   };
 
   return (
